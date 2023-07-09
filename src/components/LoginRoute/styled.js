@@ -73,6 +73,23 @@ export const Input = styled.input`
   font-size: 14px;
   color: #183b56;
 `
+export const CheckBoxContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`
+
+export const Checkbox = styled.input`
+  height: 15px;
+  width: 15px;
+`
+
+export const CheckBoxLabel = styled.label`
+  margin: 0px 0px 0px 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: ${props => (props.isDarkTheme ? '#e2e8f0' : '#181818')};
+`
 
 export const LoginButton = styled.button`
   color: #ffffff;

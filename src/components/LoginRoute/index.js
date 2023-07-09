@@ -10,6 +10,9 @@ import {
   InputCard,
   Label,
   Input,
+  CheckBoxContainer,
+  Checkbox,
+  CheckBoxLabel,
   LoginButton,
   ErrorMsg,
   UserData,
@@ -88,6 +91,14 @@ class LoginRoute extends Component {
                 onChange={this.onChangePin}
               />
             </InputCard>
+            <CheckBoxContainer>
+              <Checkbox
+                type="checkbox"
+                id="checkbox"
+                onClick={this.onClickCheckbox}
+              />
+              <CheckBoxLabel htmlFor="checkbox">Show Password</CheckBoxLabel>
+            </CheckBoxContainer>
             <LoginButton type="submit">Login</LoginButton>
             {errorMsg.length !== 0 && <ErrorMsg>{errorMsg}</ErrorMsg>}
           </FormCard>
